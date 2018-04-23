@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.ProductDetailActivity">
+
+    <ImageView
+        android:id="@+id/productDetailImage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hat1" />
+
+    <TextView
+        android:id="@+id/productDetailName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productDetailImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Beanie" />
+
+    <TextView
+        android:id="@+id/productDetailPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/productDetailImage"
+        app:layout_constraintTop_toBottomOf="@+id/productDetailName"
+        tools:text="$18" />
+
+    <TextView
+        android:id="@+id/productDetailDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="213dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productDetailImage"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et blandit augue. Proin volutpat imperdiet nunc, in sodales magna posuere nec. Pellentesque vehicula gravida ipsum. Proin ultrices felis quis mi vehicula, quis fringilla lectus gravida. Fusce sodales ut orci quis luctus. Cras dapibus egestas metus. Maecenas elit nibh, maximus nec auctor eget, tincidunt ac velit. Pellentesque lorem velit, eleifend ac pretium eget, placerat vitae sem. Ut tincidunt ut nunc at sagittis. Aliquam auctor turpis a faucibus rhoncus. Praesent aliquet dictum lectus in semper. Nunc massa lorem, pellentesque id nulla a, tristique egestas augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer et turpis elementum, ultrices eros nec, tempus tortor. Vestibulum tempus, turpis sit amet hendrerit fermentum, tellus diam tempor lorem, ac placerat diam neque at ante. " />
+
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Add To Cart!"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productDetailDetails" />
+
+</android.support.constraint.ConstraintLayout>
